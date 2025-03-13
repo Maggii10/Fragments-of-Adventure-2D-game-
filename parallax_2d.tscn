@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://00hh2rhh1i4x"]
+
+[ext_resource type="Texture2D" uid="uid://dy4im64xmi88f" path="res://Player/Parallax Background/parallax-00.png" id="1_2e25c"]
+[ext_resource type="Texture2D" uid="uid://c1w3o0ts07ky2" path="res://Player/Parallax Background/parallax-01.png" id="2_svkel"]
+[ext_resource type="Texture2D" uid="uid://5bd41l08ouri" path="res://Player/Parallax Background/parallax-02.png" id="3_ik0qw"]
+[ext_resource type="Texture2D" uid="uid://ba3xaogg54s6y" path="res://Player/Parallax Background/parallax-03.png" id="4_lsuk6"]
+
+[node name="Parallax2D" type="Parallax2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("1_2e25c")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("2_svkel")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture = ExtResource("3_ik0qw")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+texture = ExtResource("4_lsuk6")
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
